@@ -9,7 +9,7 @@ import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 
 /**
- * A class extending Callable allowing us to run it in a separate thread.
+ * A class extending Runnable allowing us to call an endpoint and time its latency in a thread.
  * @author nguyenvyl
  */
 public class RestRunnable implements Runnable {
@@ -58,7 +58,7 @@ public class RestRunnable implements Runnable {
 
     /**
      * Iteratively calls both endpoints, gets the latencies for each request,
-     * and returns the results in a Latency object wrapper.
+     * and writes the results into a list.
      */
     @Override
     public void run() {

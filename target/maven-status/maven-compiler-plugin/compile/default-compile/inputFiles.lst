@@ -1,2 +1,5 @@
+/home/nguyenvyl/NetBeansProjects/bsds-client1/src/main/java/com/nguyenvyl/bsds/client1/Latency.java
 /home/nguyenvyl/NetBeansProjects/bsds-client1/src/main/java/com/nguyenvyl/bsds/client1/BsdsClient.java
-/home/nguyenvyl/NetBeansProjects/bsds-client1/src/main/java/com/nguyenvyl/bsds/client1/RestClient.java
+/home/nguyenvyl/NetBeansProjects/bsds-client1/src/main/java/com/nguyenvyl/bsds/client1/RestExecutor.java
+/home/nguyenvyl/NetBeansProjects/bsds-client1/src/main/java/com/nguyenvyl/bsds/client1/StatsGenerator.java
+/home/nguyenvyl/NetBeansProjects/bsds-client1/src/main/java/com/nguyenvyl/bsds/client1/RestRunnable.java

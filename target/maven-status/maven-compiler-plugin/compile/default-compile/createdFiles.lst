@@ -1,0 +1,5 @@
+com/nguyenvyl/bsds/client1/BsdsClient.class
+com/nguyenvyl/bsds/client1/RestRunnable.class
+com/nguyenvyl/bsds/client1/RestExecutor.class
+com/nguyenvyl/bsds/client1/StatsGenerator.class
+com/nguyenvyl/bsds/client1/Latency.class

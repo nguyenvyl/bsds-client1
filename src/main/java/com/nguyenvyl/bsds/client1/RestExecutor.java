@@ -31,7 +31,7 @@ public class RestExecutor {
     }
 
     /**
-     * Executes our RestCallable class in several threads.
+     * Spawns several threads, each executing the RestCallable class.
      */
     public void executeAllThreads() {
         try {

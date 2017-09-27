@@ -1,17 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.nguyenvyl.bsds.client1;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 /**
- *
+ * A class that consumes a RestExecutor object and generates statistics based
+ * on the raw results stored in the object.
  * @author nguyenvyl
  */
 public class StatsGenerator {
@@ -32,7 +27,7 @@ public class StatsGenerator {
         this.executor = executor;
     }
 
-    public void generate() {
+    public void generateAllStats() {
         Integer numThreads = executor.getNumThreads();
         Integer numRequests = executor.getNumRequests();
         sortResults();
@@ -97,9 +92,9 @@ public class StatsGenerator {
 
     public void sortResults() {
         this.sortedByGet = new ArrayList<>(this.executor.getResults());
-        Collections.sort(this.sortedByGet, (Latency o1, Latency o2) -> o2.getGetLatency().compareTo(o1.getGetLatency()));
+        Collections.sort(this.sortedByGet, (Latency o1, Latency o2) -> o1.getGetLatency().compareTo(o2.getGetLatency()));
         this.sortedByPost = new ArrayList<>(this.executor.getResults());
-        Collections.sort(this.sortedByPost, (Latency o1, Latency o2) -> o2.getPostLatency().compareTo(o1.getPostLatency()));
+        Collections.sort(this.sortedByPost, (Latency o1, Latency o2) -> o1.getPostLatency().compareTo(o2.getPostLatency()));
         this.allResultsSorted = new ArrayList<>();
         for (Latency l : this.executor.getResults()) {
             allResultsSorted.add(l.getGetLatency());
